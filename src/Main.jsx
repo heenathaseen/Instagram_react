@@ -3,12 +3,13 @@ import './Main.scss';
 import Post from './Post';
 import profile from './profile.jpg';
 import ananya from './ananya.png';
+import Rightside from './Rightside';
 
 const Main = () => (
   <div className="main">
     <div className="submain">
       <div>
-        {' '}
+
         <Post
           propic={profile}
           username="Ananya pande"
@@ -16,7 +17,14 @@ const Main = () => (
           statusline="Be a reason for Smile"
         />
       </div>
-      <div />
+      <div>
+        <Rightside
+          userpic={profile}
+          username="Ananya pande"
+          name="anu"
+          
+        />
+      </div>
     </div>
 
   </div>

@@ -1,0 +1,23 @@
+.rightside{
+    .user{
+        img{
+            float: left;
+            border-radius: 50%;
+            padding-right: 5px;
+        }
+        p{
+        margin-top: -20px;
+        color:gray;
+        }
+    }
+    .stories{
+        border: 1px solid gainsboro;
+        .title{display: grid;
+            grid-template-columns:1fr 1fr;
+        .sto{
+            color:grey;
+        }}
+        
+    }
+
+}
