@@ -1,0 +1,32 @@
+import React from 'react';
+import './Post.scss';
+import profile from './profile.jpg';
+import ananya from './ananya.png';
+
+const Header = ({ image, username }) => (
+  <div className="head">
+    <div className="pro-img"><img src={image} alt="" /></div>
+    <div><h4>{username}</h4></div>
+    <div><i className="fas fa-ellipsis-h" /></div>
+
+
+  </div>
+);
+
+
+const Post = () => (
+  <div className="post">
+    <div className="header">
+      <Header
+        image={profile}
+        username="Ananya pande"
+      />
+      <img src={ananya} alt="" />
+      <div>
+          
+      </div>
+    </div>
+
+  </div>
+);
+export default Post;
