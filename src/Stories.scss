@@ -1,0 +1,41 @@
+.stories{
+    background-color: white;
+    border: 1px solid gainsboro;
+    width: 293px;
+    height:223px;
+    .title{display: grid;
+        grid-template-columns:1fr 1fr;
+    .sto{
+        color:grey;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+h5{float: right;
+    font-size: 12px;
+margin:15px 15px 0px 0px;
+}
+    
+}
+    .storygrid{
+        margin:-15px 0px 25px 0px;
+        height: 44px;
+        img{
+            float: left;
+            width: 44px;
+            height: 44px;
+            border: 2px solid rgb(201, 55, 104);
+            border-radius: 50%;
+            margin:0 20px 0 10px;
+        }
+        h4{
+            padding-top: 5px;
+            font-size: 14px;
+        }
+        p{
+            font-size: 10px;
+            color: #999999;
+            margin-top: -10px;
+            text-transform: uppercase;
+        }
+    }
+}
