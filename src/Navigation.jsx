@@ -1,6 +1,8 @@
 import React from 'react';
 import './Navigation.scss';
 
+import Findpeople from './Findpeople';
+
 const Icons = ({ icon }) => (
 
   <i className={icon} />
@@ -26,7 +28,10 @@ const Navigation = () => (
         <input type="text" className="fas" placeholder="&#xf002; Search" />
       </div>
       <div className="icons">
-        <Icons icon="far fa-compass" />
+
+        <Link to="/Findpeople"><Icons icon="far fa-compass" /></Link>
+
+
         <Icons icon="far fa-heart" />
         <Icons icon="far fa-user" />
       </div>
