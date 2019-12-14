@@ -33,7 +33,11 @@ const Navigation = () => (
 
 
         <Icons icon="far fa-heart" />
-        <Icons icon="far fa-user" />
+        <Link to="Profile">
+          {' '}
+          <Icons icon="far fa-user" />
+        </Link>
+
       </div>
     </div>
 

@@ -61,16 +61,16 @@ const Findpeople = () => (
 
     </div>
     <div className="explore">
-        <p>Explore</p>
-        <div className="ex">
+      <p>Explore</p>
+      <div className="ex">
         <Explore image={ananya} />
-      <Explore image={char} />
-      <Explore image={dwa} />
-      <Explore image={jen} />
-      <Explore image={rob} />
-      <Explore image={tom} />
-        </div>
-      
+        <Explore image={char} />
+        <Explore image={dwa} />
+        <Explore image={jen} />
+        <Explore image={rob} />
+        <Explore image={tom} />
+      </div>
+
     </div>
   </div>
 );

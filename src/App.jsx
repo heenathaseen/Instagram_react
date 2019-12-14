@@ -7,6 +7,7 @@ import {
 import Main from './Main';
 import Findpeople from './Findpeople';
 import './Navigation.scss';
+import Profile from './Profile';
 
 
 // const App = () => (
@@ -26,7 +27,7 @@ const Navigation = () => (
   <div className="navigation">
     <div className="header">
       <div className="logo">
-        <Link to="/home">
+        <Link className="link" to="/home">
           {' '}
           <ul>
             <li>
@@ -45,11 +46,14 @@ const Navigation = () => (
       </div>
       <div className="icons">
 
-        <Link to="/find"><Icons icon="far fa-compass" /></Link>
+        <Link className="link" to="/find"><Icons icon="far fa-compass" /></Link>
 
 
         <Icons icon="far fa-heart" />
-        <Icons icon="far fa-user" />
+        <Link className="link" to="profile">
+          {' '}
+          <Icons icon="far fa-user" />
+        </Link>
       </div>
     </div>
 
@@ -62,10 +66,11 @@ class App extends React.Component {
 
       <BrowserRouter>
         <Navigation />
-      
+
         <Switch>
           <Route exact path="/home" component={Main} />
           <Route exact path="/find" component={Findpeople} />
+          <Route exact path="/profile" component={Profile} />
 
         </Switch>
       </BrowserRouter>

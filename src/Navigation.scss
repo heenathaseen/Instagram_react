@@ -1,5 +1,6 @@
 .navigation{
     border-bottom: 1px solid gainsboro;
+    
     .header{
         margin: 0% 200px;
         // width: 1000px;
@@ -7,6 +8,10 @@
         grid-template-columns: 1fr 1fr 1fr;
        
         .logo{
+            .link{
+                textDecoration: none;
+                color: black;
+            }
          ul{
              li{
                  display:inline;
@@ -36,6 +41,10 @@
            
         }
         .icons{margin-left: 100px;
+            .link{
+                text-decoration: none;
+                color: black;
+            }
            
             i{ 
                 padding: 20px 10px;
