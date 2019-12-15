@@ -1,0 +1,151 @@
+.signup-page {
+  margin: 0%;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif;
+
+  .signup {
+    width: 900px;
+    margin: auto;
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    .signup-image {
+      margin-top: 30px;
+      float: right;
+      .phone {
+        position: absolute;
+      }
+      .screen {
+        position: relative;
+        margin: 100px 0 0 150px;
+      }
+    }
+
+    .signup-block {
+      background-color: white;
+      width: 350px;
+      height: 564px;
+      border: 1px solid gainsboro;
+      text-align: center;
+      align-self: auto;
+      img {
+        width: 175px;
+        height: 51px;
+        margin: 22px 86.5px 12px;
+      }
+      h4 {
+        width: 258px;
+        height: 40px;
+        margin: 0 40px 10px;
+        color: #999999;
+        font: 17px;
+        text-align: center;
+      }
+      button {
+        width: 268px;
+        height: 32px;
+        padding: 5px 9px;
+        background: #3897f0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+          margin:10px 0px;
+      }
+      i {
+        font-size: 18px;
+        font-weight: bold;
+        width: 16px;
+        height: 16px;
+        margin: 0px 8px 0px 0px;
+      }
+      .or {
+        //flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 15px 40px 18px;
+        width: 258px;
+        .orr {
+          color: #999999;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .line {
+          background-color: #efefef;
+          height: 1px;
+          position: relative;
+          top: 0.45em;
+        }
+      }
+      .input {
+          input{ width: 258px;
+            height: 38px;
+            background: #fafafa;
+            border:1px solid gainsboro;
+            border-radius: 3px;
+            margin: 3px 0px;
+            padding: 0px 0px 0px 8px;
+            font-size: 12px;
+
+        }
+       
+      }
+      p{
+          color: #999999;
+          width: 228px;
+          height: 54px;
+          margin: 10px 60px;
+          font-size: 14px;
+          span{
+            
+            columns: #999999;
+              font-weight: bold; 
+          }
+      }
+    }
+    .login{
+        margin: 10px 0px 10px;
+        width:350px;
+        height: 70px;
+        border:1px solid gainsboro;
+        background: #ffffff;
+        text-align: center;
+        p{
+            margin:25px;
+        width:318px;
+        height:18px;
+        font-size: 14px;
+        span{
+            color: #3897f0;
+        }
+
+        }
+        
+       
+    }
+    p{ width:310px;
+        height:18px; 
+       text-align: center;
+       font-size: 14px;
+    }
+    .getapp{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 136px 136px;
+        grid-gap: 20px;
+
+        img{margin: 0 30px;
+            width:136px;
+    height:40px; 
+        }
+    }
+    
+
+  }
+}

@@ -8,14 +8,9 @@ import Main from './Main';
 import Findpeople from './Findpeople';
 import './Navigation.scss';
 import Profile from './Profile';
+import Signup from './Signup';
+import insta from './insta.png';
 
-
-// const App = () => (
-//   <div className="app">
-//     <Navigation />
-//     <Main />
-//   </div>
-// );
 
 const Icons = ({ icon }) => (
 
@@ -35,7 +30,7 @@ const Navigation = () => (
               <i className="fab fa-instagram" />
             </li>
             <li>|</li>
-            <li>instagram</li>
+            <li><img src={insta} alt="" /></li>
           </ul>
         </Link>
 
@@ -65,12 +60,17 @@ class App extends React.Component {
     return (
 
       <BrowserRouter>
-        <Navigation />
+        {/* <Navigation /> */}
 
         <Switch>
-          <Route exact path="/home" component={Main} />
-          <Route exact path="/find" component={Findpeople} />
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/" component={Signup} />
+          <Navigation />
+          <Switch>
+            <Route exact path="/home" component={Main} />
+            <Route exact path="/find" component={Findpeople} />
+            <Route exact path="/profile" component={Profile} />
+          </Switch>
+
 
         </Switch>
       </BrowserRouter>
