@@ -9,6 +9,7 @@ import Findpeople from './Findpeople';
 import './Navigation.scss';
 import Profile from './Profile';
 import Signup from './Signup';
+import Login from './Login';
 import insta from './insta.png';
 
 
@@ -64,6 +65,9 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/" component={Signup} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+
           <Navigation />
           <Switch>
             <Route exact path="/home" component={Main} />

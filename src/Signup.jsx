@@ -1,5 +1,9 @@
 import React from 'react';
 import './Signup.scss';
+import {
+  Link,
+} from 'react-router-dom';
+import { NONAME } from 'dns';
 import insta from './insta.png';
 import phone from './phone.png';
 import screen from './screen.jpg';
@@ -68,12 +72,12 @@ and
           <p>
 Have an account?
             {' '}
-            <span>Login</span>
+            <span><Link to="login" style={{ textDecoration: 'none',color:'#3897f0' }}>Login</Link></span>
           </p>
         </div>
         <p>Get the app.</p>
         <div className="getapp">
-        
+
           <div><img src={gplay} alt="" /></div>
           <div><img src={appstore} alt="" /></div>
         </div>
