@@ -1,0 +1,98 @@
+.suggest{
+    background:rgba(var(--b3f,250,250,250),1);
+    margin:0px auto;
+    height:600px;
+    .suggests{
+        width: 600px;
+        height:197px;
+        margin: 0px auto;
+        padding-top:50px;
+        p{color: black;
+           
+            font-size: 16px;
+            font-weight:bold;
+       
+    }}
+    
+    
+    .suggested{
+        background-color: white;
+        //border: 1px solid gainsboro;
+        width: 600px;
+        height:197px;
+        margin: 15px auto;
+        
+        p{
+            color: #999999;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        .see{
+            float: right;
+            margin: -30px 15px;
+            font-size: 12px;
+    
+        }
+        .suggestions
+        {
+            margin:10px 0px 0px 0px;
+            height: 44px;
+            
+            
+            display: grid;
+            grid-template-columns: 2fr 50px;
+            grid-gap:15px;
+            img{
+                float: left;
+                width: 32px;
+                height: 32px;
+                //border: 2px solid rgb(201, 55, 104);
+                border-radius: 50%;
+                margin:0 20px 0 10px;
+            }
+            h4{
+                margin-top: 2px;
+                font-size: 14px;
+               
+            }
+            h5{
+                font-size: 14px;
+                color: #999999;
+                margin-top: -12px;
+                font-weight:normal;
+            }
+            p{
+                font-size: 10px;
+                color: #999999;
+                margin: -16px 0px 0px 50px;
+                text-transform: uppercase;
+                font-weight:normal;
+            }
+            button{
+                background-color:  #3897f0;
+                color: white;
+                width: 64px;
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                font-weight:bold;
+            }
+    
+        }
+           
+    }
+}
+
+.footers{  font-size: 11px;
+    color:#999999;
+   
+    ul{ margin-left:-40px;
+        li{
+            list-style-type: disc;
+           display: inline;
+           padding-right:10px;
+         
+        }
+    }
+}

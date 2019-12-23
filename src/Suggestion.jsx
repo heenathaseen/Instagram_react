@@ -2,6 +2,9 @@ import React from 'react';
 import './Suggestion.scss';
 import profile from './profile.jpg';
 import ananya from './ananya.png';
+import {
+  Link,
+} from 'react-router-dom';
 
 const Footers = () => (
   <div className="footers">
@@ -46,7 +49,8 @@ const Suggestion = () => (
 
       <p>Suggestions For You</p>
 
-      <h6 className="see">See All</h6>
+      <Link to = "/explore/people/suggested/" style={{ textDecoration: 'none', color: 'black' }}><h6 className="see">See All</h6>
+      </Link>
       <div>
         <Suggestions
           propic={ananya}

@@ -12,6 +12,7 @@ import Signup from './Signup';
 import Login from './Login';
 import insta from './insta.png';
 import Editprofile from './Editprofile';
+import Suggested from './Suggested';
 
 
 class App extends React.Component {
@@ -32,6 +33,7 @@ class App extends React.Component {
           <Route exact path="/explore/" component={Findpeople} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/editprofile" component={Editprofile} />
+          <Route exact path="/explore/people/suggested/" component={Suggested} />
 
 
         </Switch>

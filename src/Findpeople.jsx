@@ -1,5 +1,8 @@
 import React from 'react';
 import './Findpeople.scss';
+import {
+  Link,
+} from 'react-router-dom';
 
 import profile from './profile.jpg';
 import ananya from './ananya.png';
@@ -75,7 +78,7 @@ const Findpeople = () => (
     <Navigation />
     <div className="findpeople">
       <h5>Discover People</h5>
-      <p className="see">See All</p>
+      <Link to = "/explore/people/suggested/" style={{ textDecoration: 'none', color: 'black' }}><p className="see">See All</p></Link> 
       <div className="discoverpeople">
 
 
