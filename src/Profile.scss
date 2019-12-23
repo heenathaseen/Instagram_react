@@ -2,7 +2,7 @@
    
     background:rgba(var(--b3f,250,250,250),1);
     
-    height: 1000px;
+    height: 1200px;
     padding-top: 100px;
     .pro{
         margin:  0px 200px;
@@ -123,3 +123,93 @@
   }
     
 }
+.igtv{
+    margin: 0% auto;
+ .igtv-grid{
+    margin: 100px auto;
+    text-align: center;
+     img{
+         width:42px;
+         height: 42px;
+         border:1px solid black;
+         border-radius: 50%;
+         padding: 10px;
+
+     }
+     h1{
+         font-weight: normal;
+         font-size: 28px;
+     }
+     p{
+        font-size: 14px;
+
+     }
+     button{
+        background-color:  #3897f0;
+        color: white;
+        width: 99px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+ }
+}
+.explore{//margin: 50px 200px;
+   
+    .exploregrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        //grid-row-gap: 25px;
+        grid-gap: 10px;
+        height: 700px;
+        .grid{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 343px;
+            transition: .1s ease;
+            backface-visibility: hidden;
+            img{position: absolute;
+                width: 293px;
+                height: 293px;
+            }
+            .hide{
+                display: none;
+            }
+
+        }
+        .grid:hover{
+            //background: rgba(0, 0, 0, 0.5);
+            width: 293px;
+            height: 293px;
+            opacity: .7;
+            transition: .1s ease;
+            backface-visibility: hidden;
+            //transition: -50%;
+            
+            
+            .hide{position: relative;
+                
+                margin:120px auto;
+                display: grid;
+                grid-template-columns: 150px 100px;
+                text-align: center;
+               
+                ul{ text-align: center;
+                    li{
+                        list-style-type: none;
+                        float: left;
+                        color: white;
+                        
+                        h4{color:white;
+                        margin-top: -1px;}
+                    }
+                }
+            }
+            
+        }
+        
+    }}

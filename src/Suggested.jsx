@@ -57,7 +57,7 @@ const Suggested = () => (
                 followedby:"Followed by heena +......."},
                 { propic:kar,
                   proname:"TherealKareenaKapoor",
-                  name:'Kareea',
+                  name:'Kareena',
                   followedby:"Followed by thaseen +......."},
                   { propic:fiveminpp,
                     proname:"Five_Minutes_crafts",

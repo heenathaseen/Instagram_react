@@ -1,17 +1,14 @@
 import React from 'react';
 import './Profile.scss';
 import {
-  Link,
+  Switch, Route, Link,
 } from 'react-router-dom';
 import Navigation from './Navigation';
 
 import profile from './profile.jpg';
 import ananya from './ananya.png';
 import jen from './Jennifer Lawrence.jpg';
-import char from './Charlize Theron.jpg';
-import dwa from './dwaynejohn.jpeg';
-import rob from './robertdowney.jpg';
-import tom from './tomhank.jpg';
+
 import igtv from './igtv.png';
 import grid from './grid.png';
 import book from './bookmark.png';
@@ -25,7 +22,11 @@ import kare from './kareenapop.jpg';
 import kar from './kareenapp.jpeg';
 import sha from './shahidpp.jpeg';
 import fiveminpp from './fiveminpp.jpeg';
-
+import pp1 from './pp1.jpg';
+import pp2 from './pp2.jpg';
+import pp3 from './pp3.jpg';
+import pp4 from './pp4.jpg';
+import pp5 from './pp5.jpg';
 
 
 import Footer from './Footer';
@@ -47,19 +48,23 @@ const Status = ({ statuslist }) => (
 const Icons = ({ iconslist }) => (
   <>
     {iconslist.map((i) => (
-      <div className="icon-grid">
-        <img src={i.icon} alt="" />
-        <p>{i.text}</p>
-      </div>
+      <Link to={i.link} style={{ textDecoration: 'none', color: 'black' }}>
+        <div className="icon-grid">
+          <img src={i.icon} alt="" />
+          <p>{i.text}</p>
+        </div>
+      </Link>
     ))}
 
   </>
 
 
 );
-const Photo = ({ photolist }) => (
+
+const Post = ({ photolist }) => (
   <>
     {photolist.map((p) => (
+
       <div className="photo-grid">
 
         <img src={p.photo} alt="" />
@@ -70,6 +75,123 @@ const Photo = ({ photolist }) => (
   </>
 
 );
+const Posts = () => (
+  <div className="photo">
+    <Post photolist={[{ photo: ananya },
+      { photo: aa1 },
+      { photo: aa2 },
+      { photo: aa3 },
+      { photo: aa4 },
+      { photo: aa5 }]}
+    />
+
+  </div>
+);
+
+const Igtv = () => (
+  <div className="igtv">
+    <div className="igtv-grid">
+      <img src={igtv} alt="" />
+      <h1>Photos of you</h1>
+      <p>When people tag you in photos, they'll appear here.</p>
+    </div>
+
+
+  </div>
+);
+const Save = ({ images }) => (
+  <div className="exploregrid">
+    {images.map((m) => (
+      <div className="grid">
+        <img src={m.image} alt="" />
+        <div className="hide">
+          <ul>
+            <li>
+              {' '}
+              <i className="far fa-heart" />
+            </li>
+            <li>
+              {' '}
+              <h4>{m.nolikes}</h4>
+            </li>
+
+          </ul>
+
+
+          <ul>
+            <li>
+              {' '}
+              <i className="far fa-comment" />
+            </li>
+            <li>
+              {' '}
+              <h4>{m.nocomments}</h4>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </div>
+    ))}
+  </div>
+);
+const Saved = () => (
+  <div className="explore">
+
+    <div className="ex">
+      <Save images={[
+        {
+          image: pp4,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+        {
+          image: pp1,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+        {
+          image: pp2,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+        {
+          image: pp3,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+
+        {
+          image: pp5,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+        {
+          image: kare,
+          nolikes: '1024k',
+          nocomments: '500',
+        },
+
+      ]}
+      />
+
+    </div>
+  </div>
+);
+const Tagged = () => (
+  <div className="igtv">
+    <div className="igtv-grid">
+      <img src={tag} alt="" />
+      <h1>Upload a Video</h1>
+      <p>Videos must be between 1 and 60 minutes long</p>
+      <button type="button">Upload</button>
+    </div>
+
+
+  </div>
+);
+
 const Profile = () => (
   <div>
     <Navigation />
@@ -128,18 +250,25 @@ const Profile = () => (
       <div className="gallery">
         <div className="icon">
           <Icons iconslist={[{
+            link: '/profile/post/',
             icon: grid,
             text: 'post',
           },
           {
+            link: '/profile/igtv/',
+
             icon: igtv,
             text: 'igtv',
           },
           {
+            link: '/profile/saved/',
+
             icon: book,
             text: 'Saved',
           },
           {
+            link: '/profile/tagged/',
+
             icon: tag,
             text: 'tagged',
           }]}
@@ -147,20 +276,21 @@ const Profile = () => (
           />
 
         </div>
-        <div className="photo">
-          <Photo photolist={[{ photo: ananya },
-            { photo: aa1 },
-            { photo: aa2 },
-            { photo: aa3 },
-            { photo: aa4 },
-            { photo: aa5 }]}
-          />
 
-        </div>
+
+        <Switch>
+          <Route exact path="/profile/post" component={Posts} />
+          <Route exact path="/profile/igtv" component={Igtv} />
+          <Route exact path="/profile/saved" component={Saved} />
+          <Route exact path="/profile/tagged/" component={Tagged} />
+        </Switch>
+
 
       </div>
 
     </div>
+    <Footer />
+
   </div>
 
 
