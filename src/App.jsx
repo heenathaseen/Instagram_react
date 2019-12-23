@@ -32,11 +32,24 @@ class App extends React.Component {
           <Route exact path="/home" component={Main} />
           <Route exact path="/explore/" component={Findpeople} />
           <Route exact path="/profile" component={Profile} />
-          <Route exact path="/profile/post/" component={Profile} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/profile/igtv/" component={Profile} />
           <Route exact path="/profile/saved/" component={Profile} />
           <Route exact path="/profile/tagged/" component={Profile} />
           <Route exact path="/editprofile/" component={Editprofile} />
+          <Route exact path="/editprofile/" component={Editprofile} />
+          <Route exact path="/editprofile/password/change/" component={Editprofile} />
+          <Route exact path="/editprofile/manage_access/" component={Editprofile} />
+          <Route exact path="/editprofile/settings/" component={Editprofile} />
+          <Route exact path="/editprofile/contact_history/" component={Editprofile} />
+          <Route exact path="/editprofile/privacy_and_security/" component={Editprofile} />
+          <Route exact path="/editprofile/login_activity/" component={Editprofile} />
+          <Route exact path="/editprofile/emails_sent/" component={Editprofile} />
+
+
+
+
+
           <Route exact path="/explore/people/suggested/" component={Suggested} />
 
 

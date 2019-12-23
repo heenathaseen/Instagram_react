@@ -250,7 +250,7 @@ const Profile = () => (
       <div className="gallery">
         <div className="icon">
           <Icons iconslist={[{
-            link: '/profile/post/',
+            link: '/profile',
             icon: grid,
             text: 'post',
           },
@@ -277,9 +277,9 @@ const Profile = () => (
 
         </div>
 
-
+      
         <Switch>
-          <Route exact path="/profile/post" component={Posts} />
+          <Route exact path="/profile" component={Posts} />
           <Route exact path="/profile/igtv" component={Igtv} />
           <Route exact path="/profile/saved" component={Saved} />
           <Route exact path="/profile/tagged/" component={Tagged} />
