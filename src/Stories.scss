@@ -3,6 +3,8 @@
     border: 1px solid gainsboro;
     width: 293px;
     height:223px;
+    
+    
     .title{display: grid;
         grid-template-columns:1fr 1fr;
     .sto{
@@ -16,15 +18,22 @@ margin:15px 15px 0px 0px;
 }
     
 }
+
+overflow:auto;
+.scroll{
+    
     .storygrid{
         margin:-15px 0px 25px 0px;
         height: 44px;
+        
+        
         img{
             float: left;
             width: 44px;
             height: 44px;
             border: 2px solid rgb(201, 55, 104);
             border-radius: 50%;
+            background:white;
             margin:0 20px 0 10px;
         }
         h4{
@@ -38,4 +47,6 @@ margin:15px 15px 0px 0px;
             text-transform: uppercase;
         }
     }
+}
+    
 }

@@ -30,7 +30,7 @@ const Login = () => (
           },
         ]}
         />
-        <button type="button"> Log In</button>
+        <Link to="insta" style={{ textDecoration: 'none' }}><button type="button"> Log In</button></Link>
         <div className="or">
           <div className="line" />
           <div className="orr">Or</div>
@@ -56,9 +56,9 @@ Don't have an account?
           <div><img src={gplay} alt="" /></div>
           <div><img src={appstore} alt="" /></div>
         </div>
-    </div>
       </div>
-     
+    </div>
+
 
   </div>
 );

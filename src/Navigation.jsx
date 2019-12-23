@@ -1,7 +1,9 @@
 import React from 'react';
 import './Navigation.scss';
-
-import Findpeople from './Findpeople';
+import {
+  BrowserRouter, Switch, Route, Link,
+} from 'react-router-dom';
+import insta from './insta.png';
 
 const Icons = ({ icon }) => (
 
@@ -13,14 +15,17 @@ const Navigation = () => (
   <div className="navigation">
     <div className="header">
       <div className="logo">
-        <ul>
-          <li>
-            {' '}
-            <i className="fab fa-instagram" />
-          </li>
-          <li>|</li>
-          <li>instagram</li>
-        </ul>
+        <Link className="link" to="/home">
+          {' '}
+          <ul>
+            <li>
+              {' '}
+              <i className="fab fa-instagram" />
+            </li>
+            <li>|</li>
+            <li><img src={insta} alt="" /></li>
+          </ul>
+        </Link>
 
 
       </div>
@@ -29,15 +34,14 @@ const Navigation = () => (
       </div>
       <div className="icons">
 
-        <Link to="/Findpeople"><Icons icon="far fa-compass" /></Link>
+        <Link className="link" to="/explore/"><Icons icon="far fa-compass" /></Link>
 
 
         <Icons icon="far fa-heart" />
-        <Link to="Profile">
+        <Link className="link" to="/profile">
           {' '}
           <Icons icon="far fa-user" />
         </Link>
-
       </div>
     </div>
 

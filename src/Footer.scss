@@ -1,0 +1,36 @@
+.footer {
+    height: 40px;
+    width: 1150px;
+    font-family: 'Helvetica';
+    margin: 60px auto 40px auto;
+  
+    ul {
+      padding: 0;
+  
+      list-style-type: none;
+      text-transform: uppercase;
+      li {
+        font-size: 12px;
+        margin: 0 20px 0 0;
+  
+        float: left;
+        color: #003569;
+        font-weight: bolder;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+      span {
+        float: right;
+        font-size: 13px;
+        margin: 0;
+        color: black;
+        opacity: 0.4;
+        font-weight: bolder;
+      }
+      span:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  

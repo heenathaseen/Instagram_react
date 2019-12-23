@@ -4,6 +4,7 @@
     width: 293px;
     height:197px;
     margin-top: 15px;
+    
     p{
         color: #999999;
         padding-left: 10px;
@@ -44,5 +45,21 @@
             color:#3897f0;
             margin-top:-1px;
         padding-top: 10px;}
+       
+    }
+
+    
+       
+}
+.footers{  font-size: 11px;
+    color:#999999;
+   
+    ul{ margin-left:-40px;
+        li{
+            list-style-type: disc;
+           display: inline;
+           padding-right:10px;
+         
+        }
     }
 }
