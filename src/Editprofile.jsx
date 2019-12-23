@@ -38,7 +38,7 @@ class Editprofile extends React.Component {
               <Leftside settings={[
                 {
                   setting: 'Edit Profile',
-                  link: '/edit/profile',
+                  link: '/editprofile/',
                 },
                 { setting: 'Change password' },
                 { setting: 'Apps and Websites' },
@@ -51,12 +51,17 @@ class Editprofile extends React.Component {
               />
             </div>
             <div className="rightside">
-              <BrowserRouter>
-                <Switch>
-                  
-                  <Route exact path="/edit/profile" component={Edit} />
-                </Switch>
-              </BrowserRouter>
+              <Switch>
+                <Route exact path="/editprofile/" component={Edit} />
+                <Route exact path="/editprofile/password/change/" component={Editprofile} />
+                <Route exact path="/editprofile/manage_access/" component={Editprofile} />
+                <Route exact path="/editprofile/settings/" component={Editprofile} />
+                <Route exact path="/editprofile/contact_history/" component={Editprofile} />
+                <Route exact path="/editprofile/privacy_and_security/" component={Editprofile} />
+                <Route exact path="/editprofile/login_activity/" component={Editprofile} />
+                <Route exact path="/editprofile/emails_sent/" component={Editprofile} />
+              </Switch>
+
 
             </div>
 

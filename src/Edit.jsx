@@ -1,5 +1,6 @@
 import React from 'react';
-import './Editprofile.scss';
+import './Edit.scss';
+import ananya from './ananya.png';
 import Navigation from './Navigation';
 
 const Title = ({ titles }) => (
@@ -14,11 +15,11 @@ const Title = ({ titles }) => (
 );
 
 const Edit = () => (
-  <div>
-      <Navigation/>
-    <div>
+  <div className="edit">
+     
+    <div className="edit-grid">
       <div className="left">
-        <img src="" alt="" />
+        <img src={ananya} alt="" />
         <h5>Name</h5>
         <h5 id="h51">UserName</h5>
         <h5 id="h52">Website</h5>

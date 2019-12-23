@@ -1,0 +1,20 @@
+.edit {
+  .edit-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    .left{
+
+        text-align: right;
+        img{margin-top: 15px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50px;
+        }
+       
+    }
+    .right{
+        text-align: left;
+    }
+  }
+}
