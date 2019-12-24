@@ -40,6 +40,8 @@ class App extends React.Component {
           <Route exact path="/editprofile/" component={Editprofile} />
           <Route exact path="/editprofile/password/change/" component={Editprofile} />
           <Route exact path="/editprofile/manage_access/" component={Editprofile} />
+          <Route exact path="/editprofile/manage_access/" component={Editprofile} />
+          <Route exact path="/editprofile/manage_access/expired/" component={Editprofile} />
           <Route exact path="/editprofile/settings/" component={Editprofile} />
           <Route exact path="/editprofile/contact_history/" component={Editprofile} />
           <Route exact path="/editprofile/privacy_and_security/" component={Editprofile} />

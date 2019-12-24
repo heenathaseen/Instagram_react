@@ -7,6 +7,8 @@ import Navigation from './Navigation';
 import Edit from './Edit';
 import Footer from './Footer';
 import Changepassword from './Changepassword';
+import Appsandweb from './Appsandweb';
+
 import Managecontacts from './Managecontacts';
 import Emailandsms from './Emailandsms';
 import Privacyandsecurity from './Privacyandsecurity';
@@ -49,7 +51,8 @@ class Editprofile extends React.Component {
                   setting: 'Change password',
                   link: '/editprofile/password/change/',
                 },
-                { setting: 'Apps and Websites' },
+                { setting: 'Apps and Websites',
+                link: '/editprofile/manage_access/', },
                 {
                   setting: 'Email and SMS',
                   link: '/editprofile/settings/',
@@ -71,7 +74,9 @@ class Editprofile extends React.Component {
               <Switch>
                 <Route exact path="/editprofile/" component={Edit} />
                 <Route exact path="/editprofile/password/change/" component={Changepassword} />
-                <Route exact path="/editprofile/manage_access/" component={Editprofile} />
+                <Route exact path="/editprofile/manage_access/" component={Appsandweb} />
+                <Route exact path="/editprofile/manage_access/" component={Appsandweb} />
+                <Route exact path="/editprofile/manage_access/expired/" component={Appsandweb} />
                 <Route exact path="/editprofile/settings/" component={Emailandsms} />
                 <Route exact path="/editprofile/contact_history/" component={Managecontacts} />
                 <Route exact path="/editprofile/privacy_and_security/" component={Privacyandsecurity} />
