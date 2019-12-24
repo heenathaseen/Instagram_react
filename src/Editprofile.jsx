@@ -5,7 +5,11 @@ import {
 } from 'react-router-dom';
 import Navigation from './Navigation';
 import Edit from './Edit';
+import Footer from './Footer';
 import Changepassword from './Changepassword';
+import Managecontacts from './Managecontacts';
+import Emailandsms from './Emailandsms';
+import Privacyandsecurity from './Privacyandsecurity';
 
 
 const Leftside = ({ settings }) => (
@@ -46,9 +50,18 @@ class Editprofile extends React.Component {
                   link: '/editprofile/password/change/',
                 },
                 { setting: 'Apps and Websites' },
-                { setting: 'Email and SMS' },
-                { setting: 'Manage contacts' },
-                { setting: 'Privacy and Security' },
+                {
+                  setting: 'Email and SMS',
+                  link: '/editprofile/settings/',
+                },
+                {
+                  setting: 'Manage contacts',
+                  link: '/editprofile/contact_history/',
+                },
+                {
+                  setting: 'Privacy and Security',
+                  link: '/editprofile/privacy_and_security/',
+                },
                 { setting: 'Login Activity' },
                 { setting: 'Emails from Instagram' },
               ]}
@@ -59,9 +72,9 @@ class Editprofile extends React.Component {
                 <Route exact path="/editprofile/" component={Edit} />
                 <Route exact path="/editprofile/password/change/" component={Changepassword} />
                 <Route exact path="/editprofile/manage_access/" component={Editprofile} />
-                <Route exact path="/editprofile/settings/" component={Editprofile} />
-                <Route exact path="/editprofile/contact_history/" component={Editprofile} />
-                <Route exact path="/editprofile/privacy_and_security/" component={Editprofile} />
+                <Route exact path="/editprofile/settings/" component={Emailandsms} />
+                <Route exact path="/editprofile/contact_history/" component={Managecontacts} />
+                <Route exact path="/editprofile/privacy_and_security/" component={Privacyandsecurity} />
                 <Route exact path="/editprofile/login_activity/" component={Editprofile} />
                 <Route exact path="/editprofile/emails_sent/" component={Editprofile} />
               </Switch>
@@ -74,6 +87,7 @@ class Editprofile extends React.Component {
 
 
         </div>
+        <Footer />
       </div>
 
     );
