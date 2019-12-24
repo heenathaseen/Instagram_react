@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Navigation from './Navigation';
 import Edit from './Edit';
+import Changepassword from './Changepassword';
 
 
 const Leftside = ({ settings }) => (
@@ -40,7 +41,10 @@ class Editprofile extends React.Component {
                   setting: 'Edit Profile',
                   link: '/editprofile/',
                 },
-                { setting: 'Change password' },
+                {
+                  setting: 'Change password',
+                  link: '/editprofile/password/change/',
+                },
                 { setting: 'Apps and Websites' },
                 { setting: 'Email and SMS' },
                 { setting: 'Manage contacts' },
@@ -53,7 +57,7 @@ class Editprofile extends React.Component {
             <div className="rightside">
               <Switch>
                 <Route exact path="/editprofile/" component={Edit} />
-                <Route exact path="/editprofile/password/change/" component={Editprofile} />
+                <Route exact path="/editprofile/password/change/" component={Changepassword} />
                 <Route exact path="/editprofile/manage_access/" component={Editprofile} />
                 <Route exact path="/editprofile/settings/" component={Editprofile} />
                 <Route exact path="/editprofile/contact_history/" component={Editprofile} />
