@@ -4,7 +4,6 @@ import ananya from './ananya.png';
 import Navigation from './Navigation';
 
 
-
 const Edit = () => (
   <div className="edit">
 
@@ -27,16 +26,16 @@ Suggestions
       </div>
       <div className="right">
         <h3>Ananya Pande</h3>
-        <p>Change Profile Photo</p>
-        <input type="text" placeholder="Ananya" />
-        <input type="text" placeholder="Ananya Pande" />
-        <input type="text" placeholder="" />
+        <p className="prof">Change Profile Photo</p>
+        <input className="in" type="text" placeholder="Ananya" />
+        <input className="in" type="text" placeholder="Ananya Pande" />
+        <input className="in" type="text" placeholder="" />
         <textarea name="" id="" cols="30" rows="10" />
         <p className="p">Private Information</p>
-        <input type="text" placeholder="ananya@gmail.com" />
-        <input type="text" placeholder="+91 9876543210" />
-        <input type="text" placeholder="Female" />
-        <br></br>
+        <input className="in" type="text" placeholder="ananya@gmail.com" />
+        <input className="in" type="text" placeholder="+91 9876543210" />
+        <input className="in" type="text" placeholder="Female" />
+        <br />
         <input type="checkbox" checked className="checkbox" />
         <h6>
 Include your account when recommending similar accounts peopple might want to follow
