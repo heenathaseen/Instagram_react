@@ -12,6 +12,7 @@ import Appsandweb from './Appsandweb';
 import Managecontacts from './Managecontacts';
 import Emailandsms from './Emailandsms';
 import Privacyandsecurity from './Privacyandsecurity';
+import Emailsfrominsta from './Emailsfrominsta';
 
 
 const Leftside = ({ settings }) => (
@@ -51,8 +52,10 @@ class Editprofile extends React.Component {
                   setting: 'Change password',
                   link: '/editprofile/password/change/',
                 },
-                { setting: 'Apps and Websites',
-                link: '/editprofile/manage_access/', },
+                {
+                  setting: 'Apps and Websites',
+                  link: '/editprofile/manage_access/',
+                },
                 {
                   setting: 'Email and SMS',
                   link: '/editprofile/settings/',
@@ -66,7 +69,10 @@ class Editprofile extends React.Component {
                   link: '/editprofile/privacy_and_security/',
                 },
                 { setting: 'Login Activity' },
-                { setting: 'Emails from Instagram' },
+                {
+                  setting: 'Emails from Instagram',
+                  link: '/editprofile/emails_sent/',
+                },
               ]}
               />
             </div>
@@ -81,7 +87,9 @@ class Editprofile extends React.Component {
                 <Route exact path="/editprofile/contact_history/" component={Managecontacts} />
                 <Route exact path="/editprofile/privacy_and_security/" component={Privacyandsecurity} />
                 <Route exact path="/editprofile/login_activity/" component={Editprofile} />
-                <Route exact path="/editprofile/emails_sent/" component={Editprofile} />
+                <Route exact path="/editprofile/emails_sent/" component={Emailsfrominsta} />
+                <Route exact path="/editprofile/emails_sent/" component={Emailsfrominsta} />
+                <Route exact path="/editprofile/emails_sent/other/" component={Emailsfrominsta} />
               </Switch>
 
 

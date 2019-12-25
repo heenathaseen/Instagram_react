@@ -277,7 +277,7 @@ const Profile = () => (
 
         </div>
 
-      
+
         <Switch>
           <Route exact path="/profile" component={Posts} />
           <Route exact path="/profile/igtv" component={Igtv} />
@@ -287,9 +287,9 @@ const Profile = () => (
 
 
       </div>
-
+      <Footer />
     </div>
-    <Footer />
+
 
   </div>
 
