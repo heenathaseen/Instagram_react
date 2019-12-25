@@ -12,6 +12,7 @@ import Appsandweb from './Appsandweb';
 import Managecontacts from './Managecontacts';
 import Emailandsms from './Emailandsms';
 import Privacyandsecurity from './Privacyandsecurity';
+import Loginactivity from './Loginactivity';
 import Emailsfrominsta from './Emailsfrominsta';
 
 
@@ -68,7 +69,10 @@ class Editprofile extends React.Component {
                   setting: 'Privacy and Security',
                   link: '/editprofile/privacy_and_security/',
                 },
-                { setting: 'Login Activity' },
+                {
+                  setting: 'Login Activity',
+                  link: '/editprofile/login_activity/',
+                },
                 {
                   setting: 'Emails from Instagram',
                   link: '/editprofile/emails_sent/',
@@ -86,7 +90,8 @@ class Editprofile extends React.Component {
                 <Route exact path="/editprofile/settings/" component={Emailandsms} />
                 <Route exact path="/editprofile/contact_history/" component={Managecontacts} />
                 <Route exact path="/editprofile/privacy_and_security/" component={Privacyandsecurity} />
-                <Route exact path="/editprofile/login_activity/" component={Editprofile} />
+                <Route exact path="/editprofile/login_activity/" component={Loginactivity} />
+                <Route exact path="/editprofile/login_activity/" component={Loginactivity} />
                 <Route exact path="/editprofile/emails_sent/" component={Emailsfrominsta} />
                 <Route exact path="/editprofile/emails_sent/" component={Emailsfrominsta} />
                 <Route exact path="/editprofile/emails_sent/other/" component={Emailsfrominsta} />

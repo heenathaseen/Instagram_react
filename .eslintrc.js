@@ -22,6 +22,7 @@ module.exports = {
   ],
   rules: {
     'react/prop-types':0,
-    'react/prefer-stateless-function':0
+    'react/prefer-stateless-function':0,
+    'jsx-a11y/iframe-has-title':0,
   },
 };
