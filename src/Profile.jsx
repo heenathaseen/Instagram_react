@@ -240,8 +240,24 @@ const Profile = () => (
       </div>
       <div className="status">
         <Status statuslist={[{
-          image: jen,
-          text: 'Role Model',
+          image: aa2,
+          text: 'movieshooting',
+        },
+        {
+          image: aa3,
+          text: 'party',
+        },
+        {
+          image: aa4,
+          text: 'family',
+        },
+        {
+          image: aa5,
+          text: 'cover page',
+        },
+        {
+          image: pp4,
+          text: 'words',
         },
         ]}
 
