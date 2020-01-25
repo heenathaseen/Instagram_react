@@ -3,7 +3,6 @@ import './Signup.scss';
 import {
   Link,
 } from 'react-router-dom';
-import { NONAME } from 'dns';
 import insta from './insta.png';
 import phone from './phone.png';
 import screen from './screen.jpg';
@@ -64,34 +63,33 @@ class Signup extends React.Component {
                 <Input text={[
                   {
                     input: 'Mobile Number or Email',
-                    name:emailornum,
+                    name:"emailornum",
                     value:emailornum,
                     onChange:(this.handleChange),
                   },
                   {
                     input: 'Full Name',
-                    name:fullname,
+                    name:'fullname',
                     value:fullname,
                     onChange:(this.handleChange),
 
                   },
                   {
                     input: 'Username',
-                    name:username,
+                    name:'username',
                     value:username,
                     onChange:(this.handleChange),
                   },
                   {
                     input: 'Password',
-                    name:password,
+                    name:'password',
                     value:password,
-                    onChange:(this.handleChange),
+                     onChange:(this.handleChange),
                   },
                 ]}
                 />
-                <button type="button" onClick={this.handleSubmit}> Sign up</button>
               </div>
-              
+              <button type="button" onClick={this.handleSubmit}> Sign up</button>
               <p>
     By signing up you agree to our
                 {' '}
