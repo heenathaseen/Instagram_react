@@ -16,7 +16,8 @@
                 font-size: 14px;
     }
     .discoverpeople{
-        margin: 50px 550px;
+        width:900px;
+        margin: 50px auto;
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr 1fr;
        
@@ -64,12 +65,15 @@
             font-weight: bold;
         }
         .exploregrid{
+            width: 1000px;
+            margin: 0px auto;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             //grid-row-gap: 25px;
             grid-gap: 10px;
             height: 700px;
             .grid{
+               
                 opacity: 1;
                 display: block;
                 width: 100%;
@@ -79,6 +83,7 @@
                 img{position: absolute;
                     width: 293px;
                     height: 293px;
+                    margin-left: 0px;
                 }
                 .hide{
                     display: none;
@@ -86,10 +91,10 @@
 
             }
             .grid:hover{
-                width: 293px;
-                height: 293px;
+                width: 100%;
+                height: 100%;
                 opacity: .7;
-                transition: .1s ease;
+               // transition: .1s ease;
                 backface-visibility: hidden;
                 //transition: -50%;
                 
