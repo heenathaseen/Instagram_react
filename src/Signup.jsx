@@ -22,6 +22,10 @@ const Input = ({ text }) => (
   </div>
 );
 class Signup extends React.Component {
+  // const [emailornum,setEmailornum] = useState('');
+  // const [fullname,setFullname] = useState('');
+  // const [username,setUsername] = useState('');
+  // const [password,setEmailornum] = useState('');
   state = {
     emailornum: '',
     fullname: '',
